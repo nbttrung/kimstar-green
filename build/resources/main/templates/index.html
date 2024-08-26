@@ -1,0 +1,48 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div style="color: #222222; position: absolute;left: 50%; transform: translateX(-50%); font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif">
+    <div style="text-align: center;margin: 40px 0">
+        <img src="https://office-mobile-dev.dogoo.vn/static/media/logoDogoo.6757db6fb96f9f658b5c.png"
+             style="width: 120px"/>
+    </div>
+    <div style="margin: 0 auto; width: 500px; border: 1px solid #dddddd; padding: 20px; background: #fff; border-radius: .25rem; position: absolute; left: 50%; transform: translateX(-50%)">
+        <p>Kính gửi <strong th:text="${name}"></strong></p>
+        <p>Xin chân trọng cảm ơn Quý khách hàng
+            <strong th:text="${name}"></strong>
+            đã sử dụng dịch vụ <span style="font-weight: bold; color: #007FFF ">doCan </span>
+            - 1 trong những sản phẩm của Công ty cổ phần công nghệ Dogoo
+        </p>
+        <div>Quý khách có thể bắt đầu đăng nhập vào hệ thống sử dụng địa chỉ sau: </div>
+        <div><a th:href="@{${link}}" th:text="${link}"> </a> </div>
+        <table style="border: none;border-collapse: collapse;">
+            <tbody style="border: none;border-collapse: collapse;">
+            <tr style="border: none;border-collapse: collapse;">
+                <td style="border: none;border-collapse: collapse; padding: 5px">Tên đăng nhập:
+                </td>
+                <td style="border: none;border-collapse: collapse; padding: 5px"><strong th:text="${screenName}"></strong></td>
+            </tr>
+            <tr style="border: none;border-collapse: collapse;">
+                <td style="border: none;border-collapse: collapse; padding: 5px"> Mật khẩu:
+                </td>
+                <td style="border: none;border-collapse: collapse; padding: 5px"><strong th:text="${password}"></strong></td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Vui lòng đổi mật khẩu sau khi đăng nhập lần đầu tiên để đảm bảo tính bảo mật.</p>
+        <div> Thư này được gửi tự động từ Dogoo, vui lòng không trả lời! </div>
+    </div>
+</div>
+</body>
+
+</html>

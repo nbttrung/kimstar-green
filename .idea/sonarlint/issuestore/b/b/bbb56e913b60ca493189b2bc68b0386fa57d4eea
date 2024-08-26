@@ -1,0 +1,13 @@
+
+P	java:S125,"<This block of commented-out lines of code should be removed.(å¿ò5
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+M
+java:S1068"2Remove this unused "accountService" private field.(£”È§ùÿÿÿÿ
+F
+java:S1068"0Remove this unused "pwdGenerator" private field.(Ù¾¢ë
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(À´›å
